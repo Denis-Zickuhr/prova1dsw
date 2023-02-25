@@ -1,0 +1,76 @@
+* {
+  --data-card: #ffffff;
+  --buttons: #00aa00;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.container.blocked {
+  background-color: rgba(0, 0, 0, 0);
+  flex-direction: column;
+  font-size: x-large;
+}
+
+.container.unblocked {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.data {
+  width: 460px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--data-card);
+  border: solid 1px black;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.data h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.data form {
+  font-size: 20px;
+}
+
+.data .invalid-feedback {
+  font-size: 15px;
+}
+
+.data form .form-group {
+  margin-bottom: 12px;
+}
+
+.data form input[type="submit"] {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data .btn-success {
+  background-color: var(--buttons);
+  border-color: var(--buttons);
+  height: 50px;
+  width: 150px;
+  font-size: large;
+  text-shadow: none;
+}
+
+input:required{
+  border: solid 1px orange;
+}
+
